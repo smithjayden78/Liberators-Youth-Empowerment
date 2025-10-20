@@ -404,6 +404,7 @@ main div {
         width: 90%; /* Make video fluidly fit 90% of the screen */
         height: auto; /* Maintain aspect ratio */
         padding-bottom: 20px; /* Adjust border padding */
+        background-color: #fff;
     }
     
     /* === 5. Footer Adjustments === */
