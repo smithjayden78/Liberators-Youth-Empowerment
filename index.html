@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    </head>
+    <body class="home-page">
+        <header>
+            <div id="logo-container">
+                <a href="index.html">
+                    <img src="liberatorslogo1.png" alt="My Company Logo" id="logo-img">
+                </a> 
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">WHO WE ARE</a></li>             
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <h1>
+                LIBERATORS  YOUTH  EMPOWERMENT
+            </h1>
+            <h2>
+                "Liberated to liberate"
+            </h2>
+                <p>
+                    Liberators Youth Empowerment is a non-governmental organization (NGO)</br>
+                    dedicated to transforming the lives of vulnerable children within the scholastic system.</br>
+                    We primarily focus on those who are at risk due to socioeconomic factors and those who are </br>
+                    actively bullied or are displaying bullying behavior in school environments.</br></br></br>
+
+                    Our goal is to create a healthy, hurt-free zone and a sustainable positive </br>
+                    school environment by establishing a respectful, inclusive community of scholars.</br> 
+                    We achieve this through comprehensive interventions that address the root causes of conflict.</br>
+                    This involves treating both the bully and the bullied with empathy and understanding, </br>
+                    recognizing the underlying power disparities,</br> 
+                    systemic trauma, and the abuse of oppression that often fuel these negative interactions.</br></br></br>
+
+                    By fostering emotional intelligence, teaching conflict resolution skills,</br>
+                    and providing targeted mentorship, our programs aim to break the cycle of </br>
+                    violence and victimization. </br>
+                    This approach will have a profound and measurable positive impact on schools, </br>
+                    resulting in reduced dropout rates, improved academic performance, and a culture </br>
+                    of mutual respect that empowers every student to thrive.
+                </p>
+            <div> 
+                <div class="slideshow-container">
+                    
+                    <img class="mySlides" src="bully1.jpeg" alt="bullying" style="width:100%">
+                    <img class="mySlides" src="bully2.jpeg" alt="bullying 2" style="width:100%">
+                    <img class="mySlides" src="bully3.jpeg" alt="bullying3" style="width:100%">
+                </div>
+            </div>
+            <h1>
+                OUR MISSION
+            </h1>
+            <p>
+                Our mission is to confront the cycle of bullying and victimization in schools by adopting a two-pronged,</br>
+                restorative approach-providing empathetic healing for the bullied and targeted intervention for the bully.</br></br>
+                We are dedicated to cultivating a school ecosystem defined by mutual respect, emotional intelligence, </br>
+                and unwavering safety, ensuring every young person has the freedom to learn, thrive intellectually, </br>
+                and grow into a resilient, empowered citizen</br>
+            </p>
+            <video controls width="237" height="425">
+                <source src="liberators vid.mp4" type="video/mp4">
+                Your browser does not support the video tag
+            </video>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.instagram.com/liberatorsyouthempowerment" target="_blank" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61576403371060" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/+27762749548" target="_blank" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">WHO WE ARE</a></li></br>
+                    <li><a href="contact.html">CONTACT US</a></li></br>
+                </ul>
+            </nav>
+            <p> &copy; 2025 Jayden-Kyle Smith</p>
+        </footer>
+        <script>
+            let slideIndex = 1;
+            showSlides(); // Start the automatic slideshow
+
+            // Function to change the current slide using the arrow buttons
+            function plusSlides(n) {
+                // Clear any pending timeout so the user click isn't immediately overridden
+                clearTimeout(slideTimer); 
+                slideIndex += n;
+                showSlides();
+            }
+
+            // Function that controls the display logic and the timer
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                
+                // --- 1. Advance the index and loop if necessary ---
+                if (slideIndex > slides.length) {
+                    slideIndex = 1; // Go back to the first slide
+                }
+                if (slideIndex < 1) {
+                    slideIndex = slides.length; // Go to the last slide
+                }
+
+                // --- 2. Hide all slides ---
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                
+                // --- 3. Show the current slide ---
+                slides[slideIndex - 1].style.display = "block";
+                
+                // --- 4. Increment index for the next cycle ---
+                slideIndex++; 
+
+                // --- 5. AUTOMATIC CHANGE (The new part!) ---
+                // Change image every 5 seconds (5000 milliseconds)
+                slideTimer = setTimeout(showSlides, 5000); 
+            }
+        </script>
+    </body>
+</html>
