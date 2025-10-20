@@ -369,7 +369,7 @@ main div {
     /* Reduce paragraph text size and ensure it uses full width */
     main p {
         font-size: 16px; 
-        text-align: start; /* Maintain justification */
+        text-align: left; /* Maintain justification */
         max-width: 100%; 
         padding: 0 5px; /* Add slight inner padding to prevent text touching screen edge */
     }
