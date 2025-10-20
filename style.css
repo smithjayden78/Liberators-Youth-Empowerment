@@ -181,6 +181,7 @@ main div{
 main video {
     display: block; /* Make the video a block element */
     margin: 30px auto; /* Auto margins center the block */
+    background-color: #fff;
 }
 main p1{
      color: #fff;
