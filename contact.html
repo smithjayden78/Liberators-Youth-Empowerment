@@ -1,80 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberators Youth Empowerment - Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="google-site-verification" content="ym1LNO9I6M1Uqn61gPqDRARsnxMkfR8qW4soR8VP6Og" />
-</head>
-<body class="home-page">
-    <header>
-        <div id="logo-container">
-        <a href="index.html">
-            <img src="liberatorslogo1.png" alt="My Company Logo" id="logo-img">
-        </a> 
-    </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">WHO WE ARE</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
-        </nav> 
-    </header>
-    <main class="contact-page-main">
-    <h1>GET IN TOUCH</h1>
-    
-    <div class="contact-links-container">
-        
-        <div class="contact-item" onclick="redirectToSocial('https://wa.me/+27762749548')">
-            <a href="https://wa.me/+27762749548" target="_blank" class="social-icon whatsapp">
-                <i class="fab fa-whatsapp"></i>
-            </a> 
-            <span>Contact us on WhatsApp</span>
-        </div>
-        
-        <div class="contact-item" onclick="redirectToSocial('https://www.instagram.com/liberatorsyouthempowerment')">
-            <a href="https://www.instagram.com/liberatorsyouthempowerment" target="_blank" class="social-icon instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <span>Check out our Instagram page</span>
-        </div>
-        
-        <div class="contact-item" onclick="redirectToSocial('https://www.facebook.com/profile.php?id=100089827316824')">
-            <a href="https://www.facebook.com/profile.php?id=100089827316824" target="_blank" class="social-icon facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <span>Check out our Facebook page</span>
-        </div>
-        
-    </div>
-</main>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Liberators Youth Empowerment</title>
 
-    <footer>
-        <div class="social-links">
-            <a href="https://www.instagram.com/liberatorsyouthempowerment" target="_blank" class="social-icon instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=61576403371060" target="_blank" class="social-icon facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://wa.me/+27762749548" target="_blank" class="social-icon whatsapp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact Liberators Youth Empowerment — get in touch to partner, refer a learner or book a workshop." />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Liberators Youth Empowerment home">
+        <img src="liberatorslogo1.png" id="logo-img" alt="Liberators logo">
+        <span class="brand-name">Liberators Youth Empowerment</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap contact-wrap">
+      <section id="contact" class="section section-contact">
+        <h1>Get in touch</h1>
+        <p>We welcome schools, parents and community partners to reach out. Below are the quickest ways to contact us.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/+27762749548" target="_blank">+27 76 274 9548</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+            <h3>Instagram</h3>
+            <p><a href="https://www.instagram.com/liberatorsyouthempowerment" target="_blank">@liberatorsyouthempowerment</a></p>
+          </div>
+
+          <div class="contact-card">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:info@liberators.org.za">info@liberators.org.za</a></p>
+          </div>
         </div>
-        <nav class="footer-nav">
-            <ul>
-                <li><a href="index.html">WHO WE ARE</a></li></br>
-                <li><a href="contact.html">CONTACT US</a></li></br>
-            </ul>
-        </nav>
-        <p> &copy; 2025 Jayden-Kyle Smith</p>
-    </footer>
-    <script>
-    function redirectToSocial(url) {
-        window.open(url, '_blank'); // Opens the URL in a new tab/window
-    }
-    </script>
+
+        <div class="contact-form-wrap">
+          <h2>Send a quick message</h2>
+          <!-- Basic mailto form fallback — you can replace with server-side form or Formspree -->
+          <form action="mailto:info@liberators.org.za" method="post" enctype="text/plain">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-left">
+        <img src="liberatorslogo1.png" alt="Liberators logo" class="footer-logo">
+        <p class="small">Liberators Youth Empowerment — empowering learners across our schools.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-links">
+          <a class="social-icon" href="https://www.instagram.com/liberatorsyouthempowerment" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social-icon" href="https://www.facebook.com/profile.php?id=61576403371060" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-icon" href="https://wa.me/+27762749548" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap credits">
+      <p>&copy; 2025 Jayden-Kyle Smith — Liberators Youth Empowerment</p>
+    </div>
+  </footer>
+
 </body>
 </html>
